@@ -1,6 +1,7 @@
 ==============================================================
 =            Collins adult brain atlas FEM mesh              =
-=                        Version 1                           =
+=                       Version 2L                           =
+=             low-resolution mesh (70226 nodes)              =
 =                                                            =
 =  Created by Qianqian Fang <fangq at nmr.mgh.harvard.edu>   =
 ==============================================================
@@ -8,12 +9,14 @@
 == Introduction ==
 
 Collins adult brain atlas [Collins1998] FEM mesh Version 1 was 
-created on 06/03/2010 by Qianqian Fang with iso2mesh [Fang2009a] 
-version 0.9.8pre.
+created on 02/05/2011 by Qianqian Fang with iso2mesh [Fang2009a] 
+version 1.0.0. The gray/white matter surfaces were created by 
+Katherine Perdue with FreeSurfer.
 
 URL: http://mcx.sourceforge.net/cgi-bin/index.cgi?MMC/CollinsAtlasMesh
 
-Please refer to [Fang2010] for details.
+Please refer to [Fang2010] for details. This data is released in the
+public domain.
 
 == Format ==
 
