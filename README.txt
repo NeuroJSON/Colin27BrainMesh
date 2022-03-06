@@ -1,19 +1,19 @@
 ==============================================================
-=            Collins adult brain atlas FEM mesh              =
+=            Colin27 adult brain atlas FEM mesh              =
 =                       Version 2L                           =
 =             low-resolution mesh (70226 nodes)              =
 =                                                            =
-=  Created by Qianqian Fang <fangq at nmr.mgh.harvard.edu>   =
+=        Created by Qianqian Fang <q.fang at neu.edu>        =
 ==============================================================
 
 == Introduction ==
 
-Collins adult brain atlas [Collins1998] FEM mesh Version 1 was 
+Colin27 adult brain atlas [Collins1998] FEM mesh Version 1 was 
 created on 02/05/2011 by Qianqian Fang with iso2mesh [Fang2009a] 
 version 1.0.0. The gray/white matter surfaces were created by 
 Katherine Perdue with FreeSurfer.
 
-URL: http://mcx.sourceforge.net/cgi-bin/index.cgi?MMC/CollinsAtlasMesh
+URL: http://mcx.sourceforge.net/cgi-bin/index.cgi?MMC/Colin27AtlasMesh
 
 Please refer to [Fang2010] for details. This data is released in the
 public domain.
@@ -28,6 +28,29 @@ load the .mat file in matlab/octave and export to your FEM simulator.
 		1-scalp, 2-CSF, 3-gray matter, 4-white matter
 	elem: tetrahedral elements, the last column is the region ID, 
 		1-scalp and skull layer, 2-CSF, 3-gray matter, 4-white matter
+
+In addition, we also provided the mesh data in the JSON/JMesh format.
+The specifictions of this format is developed by the NeuroJSON project
+(http://neurojson.org) and can be found at https://github.com/NeuroJSON/jmesh/.
+
+The text-based JMesh file (`MMC_Collins_Atlas_Mesh_Version_2L.jmsh`, 9.4 MB)
+is a plain JSON file and can be parsed in all environments where JSON
+is supported. To load it in MATLAB, please use the JSONLab toolbox
+https://github.com/fangq/jsonlab
+
+The text-based JMesh file (`MMC_Collins_Atlas_Mesh_Version_2L.jmsh`, 9.4 MB)
+is a plain JSON file and can be parsed in all environments where JSON
+is supported. To load it in MATLAB, please use the JSONLab toolbox
+https://github.com/fangq/jsonlab; to load the data file in Python, please
+install the py-jdata module at https://pypi.org/project/jdata/.
+
+The binary-based JMesh file (`MMC_Collins_Atlas_Mesh_Version_2L.bmsh`, 6.9 MB)
+is more compact and utilizes the Binary JData (BJData) format. The specification 
+of this format can be found at https://github.com/NeuroJSON/bjdata/tree/Draft_2.
+In MATLAB/Octave, one can also use JSONLab (https://github.com/fangq/jsonlab) 
+to read/write BJData files; to load the data file in Python, please
+install the py-jdata module at https://pypi.org/project/jdata/ and
+the py-bjdata module at https://pypi.org/project/bjdata/.
 
 == Optical properties ==
 
